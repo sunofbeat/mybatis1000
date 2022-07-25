@@ -42,7 +42,7 @@ create table mybatis.users(
     
 create table mybatis.addresses(
     user_id number(2),
-    adrress varchar2(30));
+    address varchar2(30));
     
 create table mybatis.posts(
     post_id number(3),

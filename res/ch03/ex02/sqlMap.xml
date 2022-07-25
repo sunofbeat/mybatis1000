@@ -2,24 +2,21 @@
 <!DOCTYPE mapper PUBLIC '-//mybatis.org//DTD Mapper 3.0//EN'
 	'http://mybatis.org/dtd/mybatis-3-mapper.dtd'>
 <mapper namespace='ch03.ex01.Map'> 
-	
 	<select id='selectUsers' resultMap='userMap'>
-		select user_id, user_name, reg_date
-		from users
+		select users.user_id, user_name, reg_date, address
+		from users join addresses
+		on users.user_id = addresses.user_id
 		order by user_id
 	</select>
 	
-	<select id='selectAddress' resultType='address'>
-		select address
-		from addresses
-		where user_id = #{userId}
-	</select>
-		<!-- User has a address -->
-	<resultMap id= 'userMap' type= 'myUser'>
+	<resultMap id='userMap' type='myUser'>
 		<id property='userId' column='user_id'/>
 		<result property='userName' column='user_name'/>
 		<result property='regDate' column='reg_date'/>
-		<association property='address' column='user_id' select='selectAddress'/>
-		<!-- association은 address를 select의 파라미터로 넘겨주는 값 -->	
+		<association property='address' resultMap='addressMap'/>
+	</resultMap>
+	
+	<resultMap id='addressMap' type='address'>
+		<result property='address' column='address'/>
 	</resultMap>
 </mapper>
