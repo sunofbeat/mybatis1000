@@ -8,7 +8,5 @@ public class Main {
 		Map mapper = Configuration.getMapper(Map.class);
 		
 		mapper.selectUsers().forEach(System.out::println);
-
 	}
-
 }

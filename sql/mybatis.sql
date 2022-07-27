@@ -1,10 +1,11 @@
 -- using user 'system'
 -- mybatis에 관련된 유저, 스키마,객체등을 한번에 없앤다.
-drop user mybatis cascade;
+--drop user mybatis cascade;
 
 --과제] mybatis/mybatis user를 만들어라.
 create user mybatis identified by mybatis default tablespace users;
 grant connect, resource to mybatis;
+
 
 --과제] 테이블설계도를 보고 테이블 3개를 만들어라
 --     테이블명에 접두사를 붙여야 그 유저의 테이블로 생성된다.
@@ -82,7 +83,7 @@ insert into mybatis.posts
 insert into mybatis.posts
     values(201, '김치', '네가 있어야 밥을 먹지.', 2);
 insert into mybatis.posts
-    values(202, '비빔밥', '동학농민향쟁이 만든 음식이다.', 2);
+    values(202, '비빔밥', '동학농민항쟁이 만든 음식이다.', 2);
 insert into mybatis.posts
     values(203, '찹쌀떡', '네가 그리워.', 2);
     

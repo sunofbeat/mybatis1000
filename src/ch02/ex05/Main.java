@@ -6,7 +6,7 @@ public class Main {
 	public static void main(String[] args) {
 		Map mapper = Configuration.getMapper(Map.class);
 		
-		if(mapper.deleteUser(14) > 0)
+		if(mapper.deleteUser(3) > 0)
 			System.out.println("¼º°ø");
 	}
 }

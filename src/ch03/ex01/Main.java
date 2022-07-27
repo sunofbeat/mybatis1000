@@ -8,5 +8,4 @@ public class Main {
 		
 		mapper.selectUsers().forEach(System.out::println);
 	}
-
 }

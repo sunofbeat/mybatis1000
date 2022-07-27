@@ -23,8 +23,8 @@ public class Main {
 //			System.out.println("성공 13");
 		
 		// annotation을 쓰지않고 sqlMap에서 파라미터를 지정해줄수도 있다(가독성은 떨어짐)
-		if(mapper.insertUser3(14, "neo", LocalDate.now()) > 0)
-			System.out.println("성공 14");
+		if(mapper.insertUser3(3, "jinyoung", LocalDate.now()) > 0)
+			System.out.println("성공");
 
 	}
 }

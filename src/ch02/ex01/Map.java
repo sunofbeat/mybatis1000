@@ -6,4 +6,4 @@ import ch02.domain.User;
 
 public interface Map {
 	List<User> selectUsers();
-}
+}//List°´Ã¼°¡ returnµÊ

@@ -1,4 +1,4 @@
-<?xml version= '1.0' encoding= 'utf-8' ?>
+<?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE configuration PUBLIC './/mybatis.org//DTD config 3.0//EN'
 	'http://mybatis.org/dtd/mybatis-3-config.dtd'>
 <configuration> <!-- 주석달기  -->
@@ -31,6 +31,11 @@
 		<mapper resource='ch02/ex05/sqlMap.xml'/>
 		<mapper resource='ch03/ex01/sqlMap.xml'/>
 		<mapper resource='ch03/ex02/sqlMap.xml'/>
+		<mapper resource='ch04/ex01/sqlMap.xml'/>
+		<mapper resource='ch04/ex02/sqlMap.xml'/>
+		<mapper resource='ch05/ex01/sqlMap.xml'/>
+		<mapper resource='ch05/ex02/sqlMap.xml'/>
+		<mapper resource='ch05/ex03/sqlMap.xml'/>
 	</mappers>
 </configuration>
 
